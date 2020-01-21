@@ -1,0 +1,17 @@
+{
+  "include": ["src"],
+  "compilerOptions": {
+    "declaration": true,
+    "target": "ES2018",
+    "module": "CommonJS",
+    "outDir": "dist",
+    "rootDir": "src",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "strictNullChecks": true,
+    "removeComments": true,
+    "noEmitOnError": true,
+    "lib": ["ES2018"],
+    "baseUrl": "./"
+  }
+}

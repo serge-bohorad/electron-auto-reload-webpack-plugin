@@ -1,0 +1,36 @@
+{
+  "name": "webpack-electron-reload-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "keywords": [
+    "electron",
+    "webpack",
+    "webpack-plugin",
+    "reload",
+    "auto-reload",
+    "live-reload"
+  ],
+  "types": "dist/index.d.ts",
+  "author": "Randell Hart (irandellhart@gmail.com)",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm-run-all clean:dist compile:dev",
+    "build": "npm-run-all clean:dist compile:prod",
+    "compile:dev": "tsc --watch",
+    "compile:prod": "tsc -b",
+    "clean:dist": "rimraf dist"
+  },
+  "devDependencies": {
+    "@types/cross-spawn": "^6.0.1",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.0",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "cross-spawn": "^7.0.1"
+  },
+  "peerDependencies": {
+    "electron": ">=0.0.0"
+  }
+}
