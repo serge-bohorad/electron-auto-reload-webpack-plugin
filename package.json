@@ -1,7 +1,7 @@
 {
   "name": "webpack-electron-reload-plugin",
   "version": "1.0.0",
-  "description": "",
+  "description": "Webpack plugin that reload the electron process after compilation",
   "main": "dist/index.js",
   "keywords": [
     "electron",
@@ -11,6 +11,11 @@
     "auto-reload",
     "live-reload"
   ],
+  "repository": "git@github.com:iRandell/webpack-electron-reload-plugin.git",
+  "homepage": "https://github.com/iRandell/webpack-electron-reload-plugin",
+  "bugs": {
+    "url": "https://github.com/iRandell/webpack-electron-reload-plugin/issues"
+  },
   "types": "dist/index.d.ts",
   "author": "Randell Hart (irandellhart@gmail.com)",
   "license": "MIT",
