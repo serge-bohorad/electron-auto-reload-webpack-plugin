@@ -11,6 +11,9 @@
     "auto-reload",
     "live-reload"
   ],
+  "files": [
+    "dist"
+  ],
   "repository": "git@github.com:iRandell/webpack-electron-reload-plugin.git",
   "homepage": "https://github.com/iRandell/webpack-electron-reload-plugin",
   "bugs": {
