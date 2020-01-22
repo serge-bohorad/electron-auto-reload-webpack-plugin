@@ -1,18 +1,26 @@
 ## Installation
 
 ```
-npm i webpack-electron-reload-plugin --save-dev
+npm i electron-auto-reload-webpack-plugin --save-dev
 ```
 
 ## Usage:
 
+Set the following field in the package.json
+
+```
+"main": "path/to/main.js"
+```
+
+Define the plugin in your webpack configuration
+
 ```js
-const { ElectronReloadPlugin } = require('webpack-electron-reload-plugin')
+const { ElectronAutoReloadPlugin } = require('electron-auto-reload-webpack-plugin')
 
 module.exports = {
   target: 'electron-main',
   // ...
-  plugins: [new ElectronReloadPlugin()]
+  plugins: [new ElectronAutoReloadPlugin()]
   // ...
 }
 ```
