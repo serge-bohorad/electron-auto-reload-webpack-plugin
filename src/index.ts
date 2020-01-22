@@ -1,1 +1,1 @@
-export { ElectronReloadPlugin } from "./plugin";
+export { ElectronAutoReloadPlugin } from "./plugin";

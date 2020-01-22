@@ -1,4 +1,4 @@
-const prefix = "[Electron-Reload-Plugin]: ";
+const prefix = "[Electron-Auto-Reload]: ";
 
 export function error(message: string) {
   console.log("\x1b[31m%s", prefix + message, "\x1b[0m");

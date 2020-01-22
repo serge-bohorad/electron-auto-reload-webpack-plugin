@@ -3,7 +3,7 @@ import { ChildProcess } from "child_process";
 
 import { error } from "./log";
 
-export class ElectronReloadPlugin {
+export class ElectronAutoReloadPlugin {
   electronModule;
   electronProcess: ChildProcess;
 
@@ -44,7 +44,7 @@ export class ElectronReloadPlugin {
 
   // Webpack entry method
   apply = compiler => {
-    compiler.hooks.done.tap("ElectronReloadPlugin", () => {
+    compiler.hooks.done.tap("ElectronAutoReloadPlugin", () => {
       if (!this.electronProcess) {
         this.loadProcess();
       } else {
